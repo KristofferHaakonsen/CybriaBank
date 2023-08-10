@@ -3,7 +3,7 @@ package com.kristofferhaakonsen.cybriabank
 import com.kristofferhaakonsen.cybriabank.exception.DuplicateKeyExceptionMapper
 import com.kristofferhaakonsen.cybriabank.exception.GeneralExceptionMapper
 import com.kristofferhaakonsen.cybriabank.exception.NotFoundExceptionMapper
-import com.kristofferhaakonsen.cybriabank.rest.CustomerResource
+import com.kristofferhaakonsen.cybriabank.rest.customer.CustomerResource
 import org.glassfish.jersey.server.ResourceConfig
 import org.springframework.stereotype.Component
 
