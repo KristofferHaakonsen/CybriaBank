@@ -1,7 +1,6 @@
 package com.kristofferhaakonsen.cybriabank.biz.customer
 
-import com.kristofferhaakonsen.cybriabank.model.customer.ContactInformation
-import com.kristofferhaakonsen.cybriabank.model.customer.Customer
+import com.kristofferhaakonsen.cybriabank.biz.customer.db.CustomerRepository
 import org.springframework.stereotype.Component
 
 @Component

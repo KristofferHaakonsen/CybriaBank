@@ -1,4 +1,9 @@
-package com.kristofferhaakonsen.cybriabank.model.customer
+package com.kristofferhaakonsen.cybriabank.rest.customer
+
+import com.kristofferhaakonsen.cybriabank.biz.customer.Address
+import com.kristofferhaakonsen.cybriabank.biz.customer.ContactInformation
+import com.kristofferhaakonsen.cybriabank.biz.customer.Customer
+import com.kristofferhaakonsen.cybriabank.biz.customer.PersonalInformation
 
 data class CustomerDTO(
     val name: String,
@@ -15,7 +20,7 @@ fun Customer.toDTO(): CustomerDTO {
         address = this.address.toDTO()
     )
 }
-
+    
 fun CustomerDTO.toCustomer(): Customer {
     return Customer(
         name = this.name,

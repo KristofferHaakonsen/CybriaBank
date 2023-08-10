@@ -1,9 +1,9 @@
-package com.kristofferhaakonsen.cybriabank.biz.customer
+package com.kristofferhaakonsen.cybriabank.biz.customer.db
 
-import com.kristofferhaakonsen.cybriabank.model.customer.Address
-import com.kristofferhaakonsen.cybriabank.model.customer.ContactInformation
-import com.kristofferhaakonsen.cybriabank.model.customer.Customer
-import com.kristofferhaakonsen.cybriabank.model.customer.PersonalInformation
+import com.kristofferhaakonsen.cybriabank.biz.customer.Address
+import com.kristofferhaakonsen.cybriabank.biz.customer.ContactInformation
+import com.kristofferhaakonsen.cybriabank.biz.customer.Customer
+import com.kristofferhaakonsen.cybriabank.biz.customer.PersonalInformation
 import jakarta.ws.rs.NotFoundException
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate
 import org.springframework.stereotype.Component

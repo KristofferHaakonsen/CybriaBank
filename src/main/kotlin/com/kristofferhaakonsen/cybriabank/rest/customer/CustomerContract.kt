@@ -1,7 +1,5 @@
-package com.kristofferhaakonsen.cybriabank.rest
+package com.kristofferhaakonsen.cybriabank.rest.customer
 
-import com.kristofferhaakonsen.cybriabank.model.customer.ContactInformationDTO
-import com.kristofferhaakonsen.cybriabank.model.customer.CustomerDTO
 import io.swagger.v3.oas.annotations.OpenAPIDefinition
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.Parameter
