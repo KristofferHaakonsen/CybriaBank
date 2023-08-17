@@ -93,16 +93,4 @@ class CustomerResource(
             .build()
 
     }
-
-    //TODO: SKRIV TESTER!
-    //Q: Hello, how  should this application be tested?
-//A: I would write unit tests for the business logic, and integration tests for the REST endpoints.
-//Q: What would you test?
-//A: I would test that the business logic works as expected, and that the REST endpoints return the correct HTTP status codes and responses.
-//Q: What about the database?
-//A: I would use an in-memory database for integration tests, and a real database for production.
-//Q: Should the db be tested?
-//A: I would test that the database is configured correctly, and that the database is reachable.
-//Q: How would you test the database?
-//A: I would write a test that connects to the database, and executes a query.
 }
