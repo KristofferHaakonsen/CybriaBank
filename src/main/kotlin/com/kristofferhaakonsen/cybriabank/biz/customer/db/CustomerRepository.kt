@@ -33,6 +33,9 @@ val customer3 = Customer(
 
 val listOfCustomers = listOf(customer1, customer2, customer3)
 
+
+// TODO: Change to Postgres
+
 @Component
 class CustomerRepository(
     private val namedParameterJdbcTemplate: NamedParameterJdbcTemplate
@@ -54,7 +57,8 @@ class CustomerRepository(
                     country = rs.getString("country")
                 )
             )
-        }.firstOrNull()
+        }
+            .firstOrNull()
 
         if (result != null) {
             return result
