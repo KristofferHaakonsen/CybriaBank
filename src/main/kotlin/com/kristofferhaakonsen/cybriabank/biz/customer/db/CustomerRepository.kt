@@ -54,8 +54,7 @@ class CustomerRepository(
                     country = rs.getString("country")
                 )
             )
-        }
-            .firstOrNull()
+        }.firstOrNull()
 
         if (result != null) {
             return result
