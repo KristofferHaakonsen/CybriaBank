@@ -1,0 +1,13 @@
+spring:
+  flyway:
+    placeholders:
+      DB_USERNAME: cybriabankuser
+
+db:
+  jdbcUrl: jdbc:postgresql://localhost:5432/db
+  username: cybriabankuser
+  password: cybriabankuser
+  ownerUserName: cybriabankowner
+  ownerPassword: cybriabankowner
+
+
