@@ -1,7 +1,13 @@
 version: '3.3'
 
 services:
-  cybriabank:
-    build: .
+  postgresql:
+    environment:
+      - POSTGRES_DB=db
+      - POSTGRES_USER=cybriabankowner
+      - POSTGRES_PASSWORD=cybriabankowner
+      - APP_DB_USER=cybriabankuser
+      - APP_DB_PASSWORD=cybriabankuser
+    build: ./postgres-db
     ports:
-      - "8080:8080"
+      - "5432:5432"

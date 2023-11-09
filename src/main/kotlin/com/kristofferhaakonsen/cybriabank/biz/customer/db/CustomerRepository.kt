@@ -6,7 +6,7 @@ import com.kristofferhaakonsen.cybriabank.biz.customer.Customer
 import com.kristofferhaakonsen.cybriabank.biz.customer.PersonalInformation
 import jakarta.ws.rs.NotFoundException
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate
-import org.springframework.stereotype.Component
+import org.springframework.stereotype.Repository
 import java.sql.Date
 import java.time.LocalDate
 
@@ -36,7 +36,7 @@ val listOfCustomers = listOf(customer1, customer2, customer3)
 
 // TODO: Change to Postgres
 
-@Component
+@Repository
 class CustomerRepository(
     private val namedParameterJdbcTemplate: NamedParameterJdbcTemplate
 ) {

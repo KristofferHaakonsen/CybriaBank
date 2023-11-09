@@ -1,9 +1,9 @@
 package com.kristofferhaakonsen.cybriabank.biz.customer
 
 import com.kristofferhaakonsen.cybriabank.biz.customer.db.CustomerRepository
-import org.springframework.stereotype.Component
+import org.springframework.stereotype.Service
 
-@Component
+@Service
 class CustomerService(
     private val customerRepository: CustomerRepository
 ) {
