@@ -1,4 +1,7 @@
-create scema if not exists cybriabank;
+create schema cybriabank;
 
-grant usage on schema cybriabank to "${DB_USERNAME}";
+CREATE USER ${appUser} WITH PASSWORD '${appPassword}';
 
+grant usage on schema cybriabank to ${appUser};
+
+ALTER USER ${appUser} SET search_path TO cybriabank;

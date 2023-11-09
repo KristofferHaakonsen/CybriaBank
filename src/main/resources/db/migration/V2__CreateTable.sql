@@ -11,5 +11,5 @@ CREATE TABLE IF NOT EXISTS cybriabank.customer (
     PRIMARY KEY (social_security_number)
 );
 
-grant SELECT, INSERT on customer to "${dbUsername}";
+grant SELECT, INSERT, UPDATE, DELETE on cybriabank.customer to ${appUser};
 
