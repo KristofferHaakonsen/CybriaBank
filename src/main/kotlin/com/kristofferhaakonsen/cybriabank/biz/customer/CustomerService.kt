@@ -26,4 +26,8 @@ class CustomerService(
     fun updateContactInformation(ssn: String, contactInformation: ContactInformation) {
         customerRepository.updateContactInformation(ssn, contactInformation)
     }
+
+    fun updateAddress(ssn: String, address: Address) {
+        customerRepository.updateAddress(ssn, address)
+    }
 }

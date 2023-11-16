@@ -97,8 +97,8 @@ interface CustomerContract {
     fun deleteCustomer(ssn: String): Response
 
     @Operation(
-        summary = "Create customer",
-        method = HttpMethod.POST,
+        summary = "Update contact information",
+        method = HttpMethod.PATCH,
         parameters = [Parameter(
             name = "ssn",
             description = "Social security number of customer to update",
