@@ -127,4 +127,22 @@ class CustomerRepository(
             throw NotFoundException("Customer not found")
         }
     }
+
+    fun updateAddress(ssn: String, address: Address) {
+        val sql =
+            "UPDATE CUSTOMER SET address = :address, postalCode = :postal_code, city = :city, country = :country WHERE social_security_number = :ssn"
+        val result = namedParameterJdbcTemplate.update(
+            sql, mapOf(
+                "address" to address.address,
+                "postal_code" to address.postalCode,
+                "city" to address.city,
+                "country" to address.country,
+                "ssn" to ssn
+            )
+        )
+
+        if (result == 0) {
+            throw NotFoundException("Customer not found")
+        }
+    }
 }
