@@ -1,13 +1,9 @@
-version: '3.3'
-
+version: '3.8'
 services:
-  postgresql:
+  postgres:
+    image: postgres
     environment:
-      - POSTGRES_DB=db
-      - POSTGRES_USER=cybriabankowner
-      - POSTGRES_PASSWORD=cybriabankowner
-      - APP_DB_USER=cybriabankuser
-      - APP_DB_PASSWORD=cybriabankuser
-    build: ./postgres-db
+      POSTGRES_PASSWORD: password
     ports:
       - "5432:5432"
+    restart: always
