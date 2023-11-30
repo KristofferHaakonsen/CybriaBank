@@ -10,32 +10,6 @@ import org.springframework.stereotype.Repository
 import java.sql.Date
 import java.time.LocalDate
 
-val customer1 = Customer(
-    name = "Test Testesen",
-    personalInformation = PersonalInformation(dateOfBirth = "01.01.1970", socialSecurityNumber = "11111111111"),
-    contactInformation = ContactInformation(email = "test1@test.com", phone = "12345678"),
-    address = Address(address = "Testveien 1", postalCode = "1234", city = "Testby", country = "Testland")
-)
-
-val customer2 = Customer(
-    name = "Line linesen",
-    personalInformation = PersonalInformation(dateOfBirth = "05.05.1955", socialSecurityNumber = "555555555"),
-    contactInformation = ContactInformation(email = "test2@test.com", phone = "12345678"),
-    address = Address(address = "Testveien 2", postalCode = "1234", city = "Testby", country = "Testland")
-)
-
-val customer3 = Customer(
-    name = "Gunnar Gunnersen",
-    personalInformation = PersonalInformation(dateOfBirth = "09.09.1999", socialSecurityNumber = "99999999999"),
-    contactInformation = ContactInformation(email = "test3@test.com", phone = "12345678"),
-    address = Address(address = "Testveien 3", postalCode = "1234", city = "Testby", country = "Testland")
-)
-
-val listOfCustomers = listOf(customer1, customer2, customer3)
-
-
-// TODO: Change to Postgres
-
 @Repository
 class CustomerRepository(
     private val namedParameterJdbcTemplate: NamedParameterJdbcTemplate
